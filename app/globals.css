@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Always light scheme so a dark OS theme never turns the pages black */
+:root {
+  color-scheme: light;
+  --background: #f9fafb;
+  --foreground: #111827;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes heroshine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
